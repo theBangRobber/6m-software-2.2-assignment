@@ -7,7 +7,7 @@ import notebookImage from "./notebook.png";
 function Container() {
   return (
     <>
-      <h1>Movie App</h1>
+      <h1 className="container">Movie App</h1>
       <Genre
         genreName="Comedy"
         description="Movies that entertain with humor, jokes, and light-hearted situations."

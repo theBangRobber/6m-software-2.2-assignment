@@ -1,6 +1,8 @@
+import Card from "./Card";
+
 function Movie({ title, year, imageSrc }) {
   return (
-    <>
+    <Card>
       <img
         src={imageSrc}
         alt={title}
@@ -8,7 +10,7 @@ function Movie({ title, year, imageSrc }) {
       />
       <h3>{title}</h3>
       <p>Released: {year}</p>
-    </>
+    </Card>
   );
 }
 

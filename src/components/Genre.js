@@ -10,11 +10,11 @@ function Genre({ genreName, description, movies }) {
   };
 
   return (
-    <>
+    <div className="genre">
       <h2>{genreName} Movies</h2>
       <p>{description}</p>
-      {movies.map(movieInfo)}
-    </>
+      <div className="movie-container">{movies.map(movieInfo)}</div>
+    </div>
   );
 }
 
