@@ -5,7 +5,12 @@ function Genre({ genreName, description, movies }) {
   const movieInfo = (movie) => {
     const { title, year, imageSrc } = movie;
     return (
-      <Movie key={title + year} title={title} year={year} imageSrc={imageSrc} />
+      <Movie
+        key={title + year}
+        title={title}
+        year={year}
+        imageSrc={imageSrc}
+      />
     );
   };
 
@@ -13,7 +18,9 @@ function Genre({ genreName, description, movies }) {
     <div className="genre">
       <h2>{genreName} Movies</h2>
       <p>{description}</p>
-      <div className="movie-container">{movies.map(movieInfo)}</div>
+      <div className="movie-container">
+        {movies.map(movieInfo)}
+      </div>
     </div>
   );
 }
